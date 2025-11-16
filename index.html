@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio JS y AJAX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Laboratorio: Tecnologías JavaScript y AJAX</h1>
+    <p>Resolución de ejercicios de JS y panel de pruebas AJAX.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Palíndromo</h2>
+      <div class="card">
+        <label for="pal-cadena">Cadena</label>
+        <input id="pal-cadena" type="text" placeholder="Escribe una cadena">
+        <button id="pal-btn">Comprobar</button>
+        <div id="pal-res" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mayor de dos números</h2>
+      <div class="card grid-2">
+        <div>
+          <label for="mayor-a">Número A</label>
+          <input id="mayor-a" type="number" placeholder="A">
+        </div>
+        <div>
+          <label for="mayor-b">Número B</label>
+          <input id="mayor-b" type="number" placeholder="B">
+        </div>
+        <button id="mayor-btn">Calcular mayor</button>
+        <div id="mayor-res" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vocales presentes</h2>
+      <div class="card">
+        <label for="voc-frase">Frase</label>
+        <input id="voc-frase" type="text" placeholder="Escribe una frase">
+        <button id="voc-btn">Mostrar vocales</button>
+        <div id="voc-res" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frecuencia de vocales</h2>
+      <div class="card">
+        <label for="freq-frase">Frase</label>
+        <input id="freq-frase" type="text" placeholder="Escribe una frase">
+        <button id="freq-btn">Contar</button>
+        <div id="freq-res" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>AJAX</h2>
+      <div class="card">
+        <label for="ajax-url">URL</label>
+        <input id="ajax-url" type="url" placeholder="https://">
+        <div class="actions">
+          <button id="ajax-btn">Mostrar Contenidos</button>
+          <a class="link" id="ajax-fill" href="#">Usar QUINGDAO</a>
+          <label style="display:flex;align-items:center;gap:8px;">
+            <input id="ajax-proxy" type="checkbox"> Usar proxy CORS
+          </label>
+        </div>
+
+        <div class="panel">
+          <div>
+            <h3>Estados de la petición</h3>
+            <div id="ajax-estado" class="mono" aria-live="polite"></div>
+          </div>
+          <div>
+            <h3>Código de estado</h3>
+            <div id="ajax-status" class="mono" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div>
+            <h3>Cabeceras HTTP de la respuesta</h3>
+            <pre id="ajax-headers" class="mono" aria-live="polite"></pre>
+          </div>
+        </div>
+
+        <div>
+          <h3>Contenidos</h3>
+          <pre id="ajax-contenidos" class="mono" aria-live="polite"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Fuente de ejemplo cultural: Elegancia Azul, Poder del Dragón, Faroles y más. Inspirado en sitios sobre cultura china.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
